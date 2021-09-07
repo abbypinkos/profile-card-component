@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --darkest-blue: hsl(231.8,17.2%,25.1%);
+    --lightest-gray: hsl(0,0%,91%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans'/*, sans-serif*/;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 100vh;
+    width: 100vw;
+    background: url(images/bg-pattern-top.svg), 
+    url(images/bg-pattern-bottom.svg);
+    background-position: top -400px left 0px, 
+    bottom -500px right 0px;
+    background-repeat: no-repeat, 
+    no-repeat;
+    background-attachment: fixed;
+    /*background-size: auto;*/
+    background-color: var(--dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.profile-info {
+    font-weight: 400;
+    padding: 15px 15px;
+}
+
+.profile-banner {
+    border-radius: 20px;
+}
+
+.profile-photo img {
+    margin-top: -50px;
+    z-index: 1; 
+    border-radius: 100px;
+    border: 5px solid white;
+}
+
+.info {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--darkest-blue);
+}
+
+.info span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    padding: 0px 5px;
+}
+
+.location {
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+    padding: 10px 0px;
+}
+
+.card-footer {
+    border-top: 1px solid var(--lightest-gray);
+    padding: 25px 25px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--darkest-blue);
+}
+
+.item span {
+    padding: 0px 5px;
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: hsl(227, 10%, 46%);
+}
